@@ -38,17 +38,22 @@ const Navbar = () => {
        
         <div className="flex items-center gap-5">
           <NavLink to="/login">
-            <button className="px-5 py-2 border border-black rounded-full hover:bg-black hover:text-white transition duration-200">
+            <button className="px-5 py-2 border cursor-pointer border-black rounded-full hover:bg-black hover:text-white transition duration-200">
               Login
             </button>
           </NavLink>
 
           <NavLink to="/cart" className="relative">
-            <img
+            <div>
+              <img
               src={cart_icon}
               alt="Cart"
               className="h-7 w-7 object-contain hover:scale-110 transition"
             />
+            <div className="bg-red-500 text-white text-center text-[12px] rounded-full w-4 h-4 absolute -top-1 -right-2  ">
+              0
+            </div>
+            </div>
           </NavLink>
         </div>
       </nav>
