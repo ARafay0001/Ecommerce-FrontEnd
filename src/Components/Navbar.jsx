@@ -19,11 +19,12 @@ const Navbar = () => {
         </NavLink>
         <ul className="hidden md:flex gap-8 font-medium text-gray-700">
           {navItems.map((item) => (
-            <li key={item}>
+            <li key={item} className="transition-all duration-300 hover:scale-110">
               <NavLink
                 to={`/${item}`}
                 className={({ isActive }) =>
-                  `relative transition duration-300 hover:text-black after:absolute after:w-0 after:h-0.5 after:bg-black after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full ${
+                  `relative transition-all duration-300 hover:text-black hover:scale-110 after:content-[''] after:absolute after:block after:w-0 after:h-0.5 after:bg-black after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full
+ ${
                     isActive ? "text-black after:w-full" : ""
                   }`
                 }
