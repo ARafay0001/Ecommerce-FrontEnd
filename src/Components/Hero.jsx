@@ -6,8 +6,9 @@ import Arrow from "../Assets/arrow.png";
 const Hero = () => {
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center bg-linear-to-b from-pink-200 to-white px-6 md:px-0 py-10 md:py-0 overflow-hidden">
-      <div className="w-full md:w-1/2 flex flex-col justify-center md:pl-[10%] items-start sm:text-left md:text-left">
+    <div className=" bg-linear-to-b from-pink-200 to-white px-6 md:px-0 py-10 md:py-0 overflow-hidden">
+      <div className="m-auto max-w-350 flex flex-col md:flex-row items-center justify-center">
+        <div className="w-full md:w-1/2 flex flex-col justify-center md:pl-[10%] items-start sm:text-left md:text-left">
         <p className="font-bold text-sm md:text-base tracking-wide">
           NEW ARRIVAL'S ONLY!
         </p>
@@ -34,6 +35,7 @@ const Hero = () => {
         <img className="w-3/4 md:w-[70%] transition-transform duration-500 hover:scale-105 hover:rotate-1"
           src={HeroImage}
           alt="HeroImage"/>
+      </div>
       </div>
     </div>
   );

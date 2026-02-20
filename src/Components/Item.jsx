@@ -2,13 +2,13 @@ import React from "react";
 
 const Item = ({ image, name, brand, newPrice, oldPrice }) => {
   return (
-    <div className="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden w-full max-w-xs sm:max-w-2xs lg:max-w-md">
+    <div className="group cursor-pointer bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden w-full max-w-xs sm:max-w-2xs lg:max-w-md">
 
       <div className="relative overflow-hidden bg-gray-100">
         <img
           src={image}
           alt={name}
-          className="w-full h-100 object-cover transition-transform duration-500 group-hover:scale-110"
+          className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
         />
       </div>
 

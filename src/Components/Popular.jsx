@@ -4,7 +4,7 @@ import Item from "./Item.jsx"
 
 const Popular = () => {
   return (
-    <div className='px-[10%] mt-6'>
+    <div className='px-[10%] my-6'>
         <h1 className='font-bold my-6 text-3xl '>
             Popular In WOMEN 
         </h1>
