@@ -34,7 +34,7 @@ const Footer = () => {
                 className="relative cursor-pointer hover:text-gray-900 transition duration-300"
               >
                 {li}
-                <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-pink-400 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-pink-400 transition-all duration-300 group-hover:w-full"></span>
               </li>
             ))}
           </ul>
@@ -56,7 +56,7 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="mt-12">
-          <hr className="h-[4px] bg-gray-200 border-none mb-6 shadow-lg" />
+          <hr className="h-1 bg-gray-200 border-none mb-6 shadow-lg" />
           <p className="text-center text-gray-500 text-sm">
             © 2026 SHOPO. All Rights Reserved.
           </p>
