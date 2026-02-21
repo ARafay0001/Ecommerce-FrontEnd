@@ -29,7 +29,7 @@ const Navbar = () => {
                   }`
                 }
               >
-                {item.charAt(0).toUpperCase() + item.slice(1)}
+                {item.charAt(0).toUpperCase()  + item.slice(1)}
               </NavLink>
             </li>
           ))}

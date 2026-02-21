@@ -7,6 +7,7 @@ import Cart from './Pages/Cart'
 import Sign from './Pages/Sign'
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Footer from './Components/Footer'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/login' element={<Sign/>}/>
       </Routes>
+      <Footer/>
     </BrowserRouter>
   )
 }
