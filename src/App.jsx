@@ -12,6 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
+      <Shop/>
       <Routes>
         <Route path='/shop' element={<Shop/>}/>
         <Route path='/men' element={<Categories category="men"/>}/>

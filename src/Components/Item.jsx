@@ -2,7 +2,7 @@ import React from "react";
 
 const Item = ({ image, name, brand, newPrice, oldPrice }) => {
   return (
-    <div className="group cursor-pointer bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden w-full max-w-xs sm:max-w-2xs lg:max-w-md">
+    <div className="group cursor-pointer max-w-2xs bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden w-full ">
 
       <div className="relative overflow-hidden bg-gray-100">
         <img
@@ -12,7 +12,7 @@ const Item = ({ image, name, brand, newPrice, oldPrice }) => {
         />
       </div>
 
-      <div className="p-4 space-y-2">
+      <div className="bg-linear-to-b from-pink-200 to-white p-4 space-y-2">
 
         <p className="text-sm text-gray-500 uppercase tracking-wide">
           {brand}

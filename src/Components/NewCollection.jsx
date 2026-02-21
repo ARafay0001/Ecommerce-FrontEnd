@@ -1,13 +1,14 @@
 import React from 'react'
-import data from "../Assets/data"
+import data from "../Assets/new_collections"
 import Item from "./Item.jsx"
 
-const Popular = () => {
+const NewCollections = () => {
   return (
     <div className='px-[10%] my-6'>
         <h1 className='font-bold my-6 text-3xl '>
-            Popular In WOMEN 
+            New Collections
         </h1>
+        <hr className='mb-4'/>
       <div className='flex gap-4 flex-wrap justify-center  '>
         {data.map((item, idx) => (
         <Item
@@ -24,4 +25,4 @@ const Popular = () => {
   )
 }
 
-export default Popular
+export default NewCollections
